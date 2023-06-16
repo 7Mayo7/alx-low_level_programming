@@ -2,7 +2,7 @@
 /**
 *main - the entry point
 *decription printf size of various types
-*Return 0 sucess
+*Return: the main return value  0 is  sucess
 */
 int main(void)
 {

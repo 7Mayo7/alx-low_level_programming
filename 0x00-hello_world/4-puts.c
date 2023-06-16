@@ -2,7 +2,7 @@
 /**
  * main - the entry point
  * descrip print line
- * return value 0
+ * Return:value 0 the program success
  */
 int main(void)
 {

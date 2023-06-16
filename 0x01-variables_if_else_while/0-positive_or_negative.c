@@ -7,7 +7,7 @@
  *
  * Description : true_or_false_validation
  *
- * Rturn : 0 is (success)
+ * Rturn : the main return 0 is (success)
  */
 
 int main(void)

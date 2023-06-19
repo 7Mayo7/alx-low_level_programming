@@ -3,13 +3,15 @@
 /**
 * main - Entry point
 *
-* Description: A C programme prints some string
+* Description: print a qoute
 *
-* Return: Always 1 (Error)
+* Return: Always 1 (not success)
 */
 
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-return (1)
+	char quo[] = "and that piece of art is useful\" -  Dora Korpar, 2015-10-19\";
+
+	write(1, quo, 59);
+	return (1);
 }

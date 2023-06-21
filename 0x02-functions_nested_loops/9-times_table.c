@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * times_table - prints the 9 times table, starting with 0
- * @(i, j) && result: take the input from another
- * Return:the 9 times table.
-*/
+ * times_table - prints the 9 times table
+ * put space if product is asingle number
+ * place the first digit if its two numbers
+ */
 
 void times_table(void)
 {

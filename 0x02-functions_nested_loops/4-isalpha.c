@@ -2,8 +2,8 @@
 /**
  * _isalpha - check if character is lowercase or  uppercaser
  * @c: takes input from other function
- * Return: 1 is c if true
- * false 0
+ * Return: 1 if character lowercase or uppercase
+ * return 0 if anything else
  */
 
 int _isalpha(int c)

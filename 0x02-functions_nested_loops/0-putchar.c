@@ -1,7 +1,4 @@
 #include "main.h"
-
-
-
 /**
  * main - check the code
  *
@@ -9,7 +6,7 @@
  */
 int main(void)
 {
-	putchar('');
+	_putchar('_');
 	_putchar('p');
 	_puhar('u');
 	_putchar('t');

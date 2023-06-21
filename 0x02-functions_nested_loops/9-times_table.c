@@ -18,11 +18,11 @@ int num, mult, result;
 	for (mult = 1; mult <= 9; mult++)
 {
 	_putchar(',');
-	_putchar('_');
+	_putchar(' ');
 	result = num * mult;
 	if (result <= 9)
 {
-	_putchar('_');
+	_putchar(' ');
 
 }
 	else

@@ -22,3 +22,4 @@ int num, sum;
 }
 	printf("%d\n", sum);
 	return (0);
+}

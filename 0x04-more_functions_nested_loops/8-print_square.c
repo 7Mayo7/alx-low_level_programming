@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * print_square - prints a square, followed by a new line.
+ * print_square - prints a square, followed by a new line
  *
- * @size: take the input frpm another
- *
-*/
+ * @size: take the input from another
+ */
 
 void print_square(int size)
-	{
+{
 	int i, j;
 
 	if (size > 0)
@@ -25,4 +24,4 @@ void print_square(int size)
 		else
 	{
 	_putchar('\n');
-	}
+}

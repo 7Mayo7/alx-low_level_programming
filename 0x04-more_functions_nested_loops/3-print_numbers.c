@@ -8,6 +8,6 @@
 void print_numbers(void)
 {
 	for (num >= 48 && num <= 57; num++)
-	_purchar(int);
+	_purchar(num);
 	return (0);
 }

@@ -6,7 +6,7 @@
  */
 
 void print_diagonal(int n)
-}
+{
 	int postn, space;
 
 	if (n <= 0)

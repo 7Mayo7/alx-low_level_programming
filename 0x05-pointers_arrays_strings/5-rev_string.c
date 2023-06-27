@@ -5,12 +5,7 @@
 /**
  *rev_string - reverses a string
  *@s: take the input
- * Return: void
- *
- * print_rev - reverses and print  a string
- *in reverse followed by a new line
- *@s: take the input
- * Return: void
+ *Return: void
  */
 
 
@@ -22,6 +17,7 @@ void rev_string(char *s)
 	length = strlen(s);
 
 		for (i = 0, b = length - 1; a < b; a++, b--)
+
 		{
 		char x = s[a];
 
@@ -29,8 +25,12 @@ void rev_string(char *s)
 		s[b] = x;
 		}
 }
-
-
+/**
+ *print_rev - reverses and print  a string
+ *in reverse followed by a new line
+ *@s: take the input
+ * Return: void
+ */
 
 void print_rev(char *s)
 {

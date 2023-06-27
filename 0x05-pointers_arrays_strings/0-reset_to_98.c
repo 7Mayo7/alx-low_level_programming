@@ -6,17 +6,19 @@
  *@n: int parameter
  *Return: void
  */
-
 void reset_to_98(int *n)
 {
-int n;
-n = 402;
-int *p;
-p = &n;
+	int n;
 
-printf("%d\n", n);
-*p = 98;
+	n = 402;
 
-printf("n=%d\n", n);
+	int *p;
+
+	p = &n;
+
+	printf("%d\n", n);
+	*p = 98;
+
+	printf("n=%d\n", n);
 
 }

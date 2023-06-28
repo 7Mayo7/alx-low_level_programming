@@ -19,6 +19,8 @@ void puts_half(char *str)
 	for (a /= 2; str[a] != '\0'; ++a)
 	{
 
+	int str[a];
+
 	int iputchar(str[a]);
 	}
 

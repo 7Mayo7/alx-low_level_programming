@@ -2,16 +2,16 @@
 /**
  * sqrt_helper - Recursive helper function to calculate the square root
  * * @n: The number to calculate the square root
- * @guess: The current num for the square root
+ * @guess: The current guess for the square root
  * Return: The square root if it's a natural number -1 otherwise
   */
-int sqrt_helper(int n, int num)
+int sqrt_helper(int n, int guess)
 {
-	if (num * num == n)
-	return (num);
-	if (num * num > n)
+	if (guess * guess == n)
+	return (guess);
+	if (guess * guess > n)
 	return (-1);
-	return (sqrt_helper(n, num + 1));
+	return (sqrt_helper(n, guess + 1));
 
 }
 

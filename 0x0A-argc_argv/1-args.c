@@ -2,9 +2,9 @@
 
 /**
  *main - print number of arguments passed
- *@argc: number of commandline arg
- *@argv: pointer of array of commandline arg
- *Return: success 0 another fail
+ *@argc: number of commandline argument
+ *@argv: pointer of array of commandline argument
+ *Return: success 0 not zero fail
  */
 
 int main(int argc, char *argv[] _attribute_((unused)))

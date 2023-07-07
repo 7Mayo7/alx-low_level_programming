@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdib.h>
 
 /**
  * main - all starts here

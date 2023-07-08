@@ -1,28 +1,27 @@
 #include<stdio.h>
 
 /**
- *main - print sum of two numbers
- *@argc: number of command line arguments
- *@argv: pointer to an array of command line arguments
- *Return: 0 success , not zero fail
- */
+ * main - Entery point
+ * Description: multiplies two numbers
+ * @argc: takes input
+ * @argv: takes input
+ * Return: always 0 (Success)
+*/
 
 int main(int argc, char *argv[])
-
 {
-	int sum;
+	int num1, num2, result;
 
-	if (argc == 3)
+	if (argc != 3)
 	{
-		sum = atoi(argv[1] * atoi(argv[2]);
-		printf("%d\n", sum);
-	}
-
-	else
-	{
-	printf("error\n");
+	printf("Error\n");
 	return (1);
 	}
 
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+
+	printf("%d\n", result);
 	return (0);
 }

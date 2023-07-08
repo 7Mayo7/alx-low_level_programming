@@ -1,24 +1,40 @@
 #include<stdio.h>
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
 /**
- * main - all starts here
- *@argc: number of arguments
- *@argv: array of pointer to arguments
- *Return: always 0
- */
+ * main - Entery point
+ * Description: adds positive numbers
+ * @argc: takes input
+ * @argv: takes input
+ * Return: always 0 (Success)
+*/
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	char *c;
+	int i, j, sum = 0;
 
-	while (--argc)
+	if (argc == 1)
 	{
-	for (c = argv[argc]; *c; c++)
-	if (*c < '0' || *c; > '9')
-		return (printf("Error\n"), 1);
-	sum += atoi(argv[argc]);
+	printf("0\n");
+	return (0);
 	}
+
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+		if (!isdigit(argv[i][j]))
+		{
+		printf("Error\n");
+		return (1);
+		}
+		}
+	sum += atoi(argv[i]);
+	}
+
 	printf("%d\n", sum);
 	return (0);
 }

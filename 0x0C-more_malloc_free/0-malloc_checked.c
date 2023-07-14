@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <main.h>
 /**
- * *mallco_checked - allocates memory using and exit it faild
- * @b: int input
- * Return: pointer to array initialize or null
+ * *mallco_checked - allocates memory using malloc
+ * @b: num of bytes to allocate
+ * Return: pointer to allocated memory
  */
 
 void *malloc_checked(unsigned int b)
 {
+	void *ptr;
+
 	void *ptr = malloc(b);
 
 	if (ptr == NULL)
-	{
-	printf("Error: malloc failed\n");
 	exit(98);
-	}
+
 	return (ptr);
 }

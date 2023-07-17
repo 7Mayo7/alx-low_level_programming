@@ -11,16 +11,13 @@
  * Free the memory allocated for the owner string
  * Free the memory allocated for the dog_t structure
  */
+
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
 	{
-	void free_dog(dog_t *d)
-	{
 	free(d->name);
-
 	free(d->owner);
-
 	free(d);
 	}
 }

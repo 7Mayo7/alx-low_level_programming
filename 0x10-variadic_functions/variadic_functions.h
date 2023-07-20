@@ -11,7 +11,7 @@
 
 typedef struct print_fn
 {
-	har format;
+	char format;
 	void (*printer)(va_list);
 } print_fn_t;
 

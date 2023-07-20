@@ -3,8 +3,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_char - Print a char
- * @args: The va_list containing the char to print
+ * print_char - Print a char.
+ * @args: The va_list containing the char to print.
  */
 void print_char(va_list args)
 {
@@ -12,8 +12,8 @@ void print_char(va_list args)
 }
 
 /**
- * print_int - Print an integer
- * @args: The va_list containing the integer to print
+ * print_int - Print an integer.
+ * @args: The va_list containing the integer to print.
  */
 void print_int(va_list args)
 {
@@ -21,8 +21,8 @@ void print_int(va_list args)
 }
 
 /**
- * print_float - Print a float
- * @args: The va_list containing the float to print
+ * print_float - Print a float.
+ * @args: The va_list containing the float to print.
  */
 void print_float(va_list args)
 {
@@ -30,12 +30,12 @@ void print_float(va_list args)
 }
 
 /**
- * print_string - Print a string
- * @args: The va_list containing the string to print
+ * print_string - Print a string.
+ * @args: The va_list containing the string to print.
  */
 void print_string(va_list args)
 {
-	char *str = va_arg(args, char *);
+char *str = va_arg(args, char *);
 
 	if (str != NULL)
 	printf("%s", str);
@@ -44,8 +44,8 @@ void print_string(va_list args)
 }
 
 /**
- * print_all - Print anything based on the given format
- * @format: The format string specifying the types of arguments
+ * print_all - Print anything based on the given format.
+ * @format: The format string specifying the types of arguments.
  */
 void print_all(const char * const format, ...)
 {
@@ -81,6 +81,5 @@ void print_all(const char * const format, ...)
 	}
 
 	va_end(args);
-
 	printf("\n");
 }

@@ -3,6 +3,12 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * struct print_fn - Holds a format specifier and corresponding function.
+ * @format: The format specifier character.
+ * @printer: Function pointer to the corresponding print function.
+ */
+
 typedef struct print_fn
 {
 	char format;

@@ -1,51 +1,55 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdio.h>
 
 /**
- * print_char - Print a char.
- * @args: The va_list containing the char to print.
+ * print_char - Print a char
+ * @args: The va_list that contains the char to be printed
  */
 void print_char(va_list args)
 {
-	printf("%c", va_arg(args, int));
+	char c = va_arg(args, int);
+
+	printf("%c", c);
 }
 
 /**
- * print_int - Print an integer.
- * @args: The va_list containing the integer to print.
+ * print_integer - Print an integer
+ * @args: The va_list that contains the integer to be printed
  */
-void print_int(va_list args)
+void print_integer(va_list args)
 {
-	printf("%d", va_arg(args, int));
+	int num = va_arg(args, int);
+
+	printf("%d", num);
 }
 
 /**
- * print_float - Print a float.
- * @args: The va_list containing the float to print.
+ * print_float - Print a float
+ * @args: The va_list that contains the float to be printed
  */
 void print_float(va_list args)
 {
-	printf("%f", va_arg(args, double));
+	double num = va_arg(args, double);
+
+	printf("%f", num);
 }
 
 /**
- * print_string - Print a string.
- * @args: The va_list containing the string to print.
+ * print_string - Print a string
+ * @args: The va_list that contains the string to be printed
  */
 void print_string(va_list args)
 {
-char *str = va_arg(args, char *);
+	char *str = va_arg(args, char *);
 
-	if (str != NULL)
+	if (str == NULL)
+	str = "(nil)";
 	printf("%s", str);
-	else
-	printf("(nil)");
 }
 
 /**
- * print_all - Print anything based on the given format.
- * @format: The format string specifying the types of arguments.
+ * print_all - Print anything based on the provided format
+ * @format: A string containing the format specifiers
  */
 void print_all(const char * const format, ...)
 {
@@ -53,9 +57,9 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 	char *separator = "";
 
-	print_fn_t print_fn[] = {
+	print_fn_t print_fns[] = {
 	{'c', print_char},
-	{'i', print_int},
+	{'i', print_integer},
 	{'f', print_float},
 	{'s', print_string},
 	{0, NULL}
@@ -66,12 +70,12 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 	j = 0;
-	while (print_fn[j].format != 0)
+	while (print_fns[j].format)
 	{
-	if (format[i] == print_fn[j].format)
+	if (print_fns[j].format == format[i])
 	{
 	printf("%s", separator);
-	print_fn[j].printer(args);
+	print_fns[j].printer(args);
 	separator = ", ";
 	break;
 	}
@@ -80,6 +84,6 @@ void print_all(const char * const format, ...)
 	i++;
 	}
 
-	va_end(args);
+	a_end(args);
 	printf("\n");
 }

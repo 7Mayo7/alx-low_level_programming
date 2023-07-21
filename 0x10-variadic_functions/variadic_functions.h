@@ -1,17 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+
 #include <stdarg.h>
-#ifndef VARIADIC_FUNCTIONS_H 
-#define VARIADIC_FUNCTIONS_H 
- 
-#include <stdarg.h> 
- 
-typedef struct print_fn 
-{ 
-	char format; 
-	void (*printer)(va_list); 
-} print_fn_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
